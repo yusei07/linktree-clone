@@ -1,0 +1,281 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #F4F2F1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+header {
+  width: 95%;
+  max-width: 788px;
+  display: flex;
+  justify-content: flex-end;
+  padding: 12px;
+  margin-top: 15px;
+}
+
+/* container */
+
+.container {
+  width: 91%;
+  max-width: 680px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.5;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden
+}
+
+h2 {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 2.5em;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #293631
+}
+
+.tile {
+  width: 100%;
+  background-color: #ffffff;
+  margin: .7em 0;
+  border-radius: 10px;
+  gap: 1.7em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tile p {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.tile:hover {
+  transition: cubic-bezier(.07, 1.41, .82, 1.41) 0.2s;
+  transform: scale(1.02);
+}
+
+.image-container {
+  width: 6em;
+  height: 6em;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.image-container img {
+  height: 100%;
+}
+
+.icon img {
+  margin: 10px 10px;
+  height: 34px;
+  width: 34px;
+}
+
+footer {
+  font-style: italic;
+  font-size: 1.5em;
+  font-family: monospace;
+}
+
+/* share tile */
+
+.tile-share-button {
+  margin: 8px;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  opacity: 0;
+}
+
+.tile-share-button svg {
+  margin-left: 12px;
+  margin-top: 10px;
+}
+
+.tile:hover .tile-share-button {
+  opacity: 1;
+}
+
+.tile-share-button:hover {
+  background-color: #DDDEDD;
+  opacity: 1;
+}
+
+.tile-share-button svg:hover {
+  background-color: transparent;
+}
+
+/* share btn (yutree) */
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+header > button {
+  position: absolute;
+  display: flex;
+  justify-self: flex-end;
+  padding: 12px;
+  border-radius: 50%;
+  border: 1px solid #e3e3e3;
+  background-color: #F0F0F0;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border-radius: 16px;
+  z-index: 10;
+  background-color: white;
+  width: 360px;
+  max-width: 80%;
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-header .title {
+  text-align: center;
+  margin-top: 0.7em;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  width: 100%;
+  height: 100%;
+}
+
+.modal-header .close-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.modal-body {
+  width: 100%;
+  max-width: 680px;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 10px;
+}
+
+.modal-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  margin: .2em;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.modal-content:hover {
+  background-color: #F4F2F1;
+}
+
+.modal-content p {
+  margin-left: 16px;
+  flex: 1 1 0%;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.modal-icon ion-icon {
+  margin: 10px 10px;
+  height: 22px;
+  width: 22px;
+}
+
+.modal-content .modal-share-button {
+  margin: 8px;
+  background: transparent;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.copy-field {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent;
+  border-radius: 5px;
+  margin: 1em .7em .7em .7em;
+  width: auto;
+  height: 4em;
+  padding: 20px;
+  border: 1px solid lightgray;
+}
+
+#link {
+  font-size: 15px;
+  overflow: scroll;
+}
+
+#link::-webkit-scrollbar {
+  display: none;
+}
+
+#copy-btn {
+  color: rgb(0, 0, 0);
+  line-height: 1.5;
+  font-weight: 550;
+  padding: 0 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}

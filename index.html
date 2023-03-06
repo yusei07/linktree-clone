@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>yu's links!</title>
+  <link rel="stylesheet" href="style.css" />
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+  <!-- share modal popup -->
+  <header>
+    <button onclick="share()" data-modal-target="#modal">
+      <ion-icon name="ellipsis-horizontal"></ion-icon>
+    </button>
+    <div class="modal" id="modal">
+      <div class="modal-header">
+        <div class="title">Share @yusei_07 Link</div>
+        <button data-close-button class="close-button">&times;</button>
+      </div>
+      <div class="modal-body">
+        <a class="facebook">
+          <div class="modal-content">
+            <div class="modal-icon">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </div>
+            <p>Share on Facebook</p>
+            <div class="modal-share-button" link="link here">
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+            </div>
+          </div>
+        </a>
+        <a class="linkedin">
+          <div class="modal-content">
+            <div class="modal-icon">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </div>
+            <p>Share on LinkedIn</p>
+            <div class="modal-share-button" link="link here">
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+            </div>
+          </div>
+        </a>
+        <a class="twitter">
+          <div class="modal-content">
+            <div class="modal-icon">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </div>
+            <p>Share on Twitter</p>
+            <div class="modal-share-button" link="link here">
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+            </div>
+          </div>
+        </a>
+        <a class="whatsapp">
+          <div class="modal-content">
+            <div class="modal-icon">
+              <ion-icon name="logo-whatsapp"></ion-icon>
+            </div>
+            <p>Share on WhatsApp</p>
+            <div class="modal-share-button" link="link here">
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+            </div>
+          </div>
+        </a>
+        <a class="email" href="mailto:?Subject=Check out yu's tree!&body=Check out this yutree! - https://yutree.com/yusei_07">
+          <div class="modal-content">
+            <div class="modal-icon">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+            <p>Share via Email</p>
+            <div class="modal-share-button" link="link here">
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+            </div>
+          </div>
+        </a>
+      <!-- copy link -->
+        <div class="copy-field">
+          <span id="link">https://yutree.com/yusei07</span>
+          <span id="copy-btn">Copy</span>
+        </div>
+      </div>
+    </div>
+    <div id="overlay"></div>
+  </header>
+    <!-- content -->
+
+  <div class="container">
+    <div class="image-container">
+      <img src="/images/rei_bw.png" />
+    </div>
+    <h1>@yu_097</h1>
+    <h2>"I don't know how I'll feel when I'm dead, But I don't want to regret
+      the way I lived."</h2>
+      <!-- 
+    <a class="tile" href="link here">
+      <div class="icon">
+        <img src="images/pinterest-logo.png" size="small" alt="pin-img" />
+      </div>
+      <p>portfolio website</p>
+    </a>
+    -->
+    <a class="tile" href="https://www.instagram.com/yu._097/">
+      <div class="icon">
+        <img src="images/instagram.png" size="small" alt="insta-img" />
+      </div>
+      <p>Instagram</p>
+      <div class="tile-share-button" link="https://www.instagram.com/yu._097/">
+        <svg width="16" height="16" viewBox="0 0 16 16" enable-background="new 0 0 24 24" class="sc-gKsewC iPWGYb"><path fill-rule="evenodd" clip-rule="evenodd" d="M10.6464 3.85347L11 4.20702L11.7071 3.49992L11.3536 3.14636L8.35355 0.146362H7.64645L4.64645 3.14636L4.29289 3.49992L5 4.20702L5.35355 3.85347L7.5 1.70702V9.49992V9.99992H8.5V9.49992V1.70702L10.6464 3.85347ZM1 5.49994L1.5 4.99994H4V5.99994H2V14.9999H14V5.99994H12V4.99994H14.5L15 5.49994V15.4999L14.5 15.9999H1.5L1 15.4999V5.49994Z" fill="currentColor"></path></svg>
+      </div>
+    </a>
+    <a class="tile" href="https://open.spotify.com/user/bayuarimbawa05?si=fe28a03af7fa4554">
+      <div class="icon">
+        <img src="images/spotify.png" size="small" alt="spotify-img" />
+      </div>
+      <p>Spotify</p>
+      <div class="tile-share-button" link="https://open.spotify.com/user/bayuarimbawa05?si=fe28a03af7fa4554">
+        <svg width="16" height="16" viewBox="0 0 16 16" enable-background="new 0 0 24 24" class="sc-gKsewC iPWGYb"><path fill-rule="evenodd" clip-rule="evenodd" d="M10.6464 3.85347L11 4.20702L11.7071 3.49992L11.3536 3.14636L8.35355 0.146362H7.64645L4.64645 3.14636L4.29289 3.49992L5 4.20702L5.35355 3.85347L7.5 1.70702V9.49992V9.99992H8.5V9.49992V1.70702L10.6464 3.85347ZM1 5.49994L1.5 4.99994H4V5.99994H2V14.9999H14V5.99994H12V4.99994H14.5L15 5.49994V15.4999L14.5 15.9999H1.5L1 15.4999V5.49994Z" fill="currentColor"></path></svg>
+      </div>
+    </a>
+    <a class="tile" href="https://twitter.com/jpnpancakes">
+      <div class="icon">
+        <img src="images/twitter.png" size="small" alt="twitter-img" />
+      </div>
+      <p>Twitter</p>
+      <div class="tile-share-button" link="https://twitter.com/jpnpancakes">
+        <svg width="16" height="16" viewBox="0 0 16 16" enable-background="new 0 0 24 24" class="sc-gKsewC iPWGYb"><path fill-rule="evenodd" clip-rule="evenodd" d="M10.6464 3.85347L11 4.20702L11.7071 3.49992L11.3536 3.14636L8.35355 0.146362H7.64645L4.64645 3.14636L4.29289 3.49992L5 4.20702L5.35355 3.85347L7.5 1.70702V9.49992V9.99992H8.5V9.49992V1.70702L10.6464 3.85347ZM1 5.49994L1.5 4.99994H4V5.99994H2V14.9999H14V5.99994H12V4.99994H14.5L15 5.49994V15.4999L14.5 15.9999H1.5L1 15.4999V5.49994Z" fill="currentColor"></path></svg>
+      </div>
+    </a>
+    <a class="tile" href="https://pin.it/4DcIOaQ">
+      <div class="icon">
+        <img src="images/pinterest-logo.png" size="small" alt="pin-img" />
+      </div>
+      <p>Pinterest</p>
+      <div class="tile-share-button" link="https://pin.it/4DcIOaQ">
+        <svg width="16" height="16" viewBox="0 0 16 16" enable-background="new 0 0 24 24" class="sc-gKsewC iPWGYb"><path fill-rule="evenodd" clip-rule="evenodd" d="M10.6464 3.85347L11 4.20702L11.7071 3.49992L11.3536 3.14636L8.35355 0.146362H7.64645L4.64645 3.14636L4.29289 3.49992L5 4.20702L5.35355 3.85347L7.5 1.70702V9.49992V9.99992H8.5V9.49992V1.70702L10.6464 3.85347ZM1 5.49994L1.5 4.99994H4V5.99994H2V14.9999H14V5.99994H12V4.99994H14.5L15 5.49994V15.4999L14.5 15.9999H1.5L1 15.4999V5.49994Z" fill="currentColor"></path></svg>
+      </div>
+    </a>
+    <a class="tile" href="https://www.instagram.com/yu._097/">
+      <div class="icon">
+        <img src="images/Notion_app_logo.png" size="small" alt="notion-img" />
+      </div>
+      <p>Notion</p>
+      <div class="tile-share-button" link="https://twitter.com/jpnpancakes">
+        <svg width="16" height="16" viewBox="0 0 16 16" enable-background="new 0 0 24 24" class="sc-gKsewC iPWGYb"><path fill-rule="evenodd" clip-rule="evenodd" d="M10.6464 3.85347L11 4.20702L11.7071 3.49992L11.3536 3.14636L8.35355 0.146362H7.64645L4.64645 3.14636L4.29289 3.49992L5 4.20702L5.35355 3.85347L7.5 1.70702V9.49992V9.99992H8.5V9.49992V1.70702L10.6464 3.85347ZM1 5.49994L1.5 4.99994H4V5.99994H2V14.9999H14V5.99994H12V4.99994H14.5L15 5.49994V15.4999L14.5 15.9999H1.5L1 15.4999V5.49994Z" fill="currentColor"></path></svg>
+      </div>
+    </a>
+    <a class="tile" href="https://github.com/yusei07">
+      <div class="icon">
+        <img src="images/github-sign.png" size="small" alt="pin-img" />
+      </div>
+      <p>Github</p>
+      <div class="tile-share-button" link="https://github.com/yusei07">
+        <svg width="16" height="16" viewBox="0 0 16 16" enable-background="new 0 0 24 24" class="sc-gKsewC iPWGYb"><path fill-rule="evenodd" clip-rule="evenodd" d="M10.6464 3.85347L11 4.20702L11.7071 3.49992L11.3536 3.14636L8.35355 0.146362H7.64645L4.64645 3.14636L4.29289 3.49992L5 4.20702L5.35355 3.85347L7.5 1.70702V9.49992V9.99992H8.5V9.49992V1.70702L10.6464 3.85347ZM1 5.49994L1.5 4.99994H4V5.99994H2V14.9999H14V5.99994H12V4.99994H14.5L15 5.49994V15.4999L14.5 15.9999H1.5L1 15.4999V5.49994Z" fill="currentColor"></path></svg>
+      </div>
+    </a>
+  </div>
+  <footer>
+    <h4>✧˚ ༘ yu.tree ⋆｡˚</h4>
+  </footer>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+<script src="script.js"></script>
+
+</html>

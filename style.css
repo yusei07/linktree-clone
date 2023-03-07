@@ -143,6 +143,11 @@ header > button {
   border-radius: 50%;
   border: 1px solid #e3e3e3;
   background-color: #F0F0F0;
+  transition: background-color .4s ease;
+}
+
+header > button:hover {
+  background-color: #DDDEDD;
 }
 
 .modal {
